@@ -1,6 +1,6 @@
 {
   "name": "broccoli-use-strict-remover",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Broccoli plugin that removes `'use strict';` from modules when REMOVE_USE_STRICT: true is present.",
   "main": "index.js",
   "author": "Robert Jackson",
