@@ -1,0 +1,28 @@
+{
+  "name": "broccoli-use-strict-remover",
+  "version": "1.0.0",
+  "description": "Broccoli plugin that removes `'use strict';` from modules when REMOVE_USE_STRICT: true is present.",
+  "main": "index.js",
+  "author": "Robert Jackson",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rwjblue/broccoli-use-strict-remover.git"
+  },
+  "scripts": {
+    "test": "mocha tests/"
+  },
+  "keywords": [
+    "broccoli-plugin",
+    "javascript"
+  ],
+  "dependencies": {
+    "broccoli-filter": "^0.1.9"
+  },
+  "devDependencies": {
+    "broccoli": "^0.13.0",
+    "expect.js": "^0.3.1",
+    "mocha": "~1.18.2",
+    "mocha-jshint": "0.0.9"
+  }
+}
