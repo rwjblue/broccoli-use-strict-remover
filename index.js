@@ -22,8 +22,6 @@ UseStrictRemover.prototype.processString = function(content, relativePath) {
   var output = content;
 
   if (content.match(this.matcher)) {
-    console.log('processing: ' + relativePath);
-
     output = content.replace(/["']use strict['"];\n/g, '');
   }
 
