@@ -18,7 +18,7 @@ UseStrictRemover.prototype.constructor = UseStrictRemover;
 UseStrictRemover.prototype.extensions = ['js'];
 UseStrictRemover.prototype.targetExtension = 'js';
 
-UseStrictRemover.prototype.processString = function(content, relativePath) {
+UseStrictRemover.prototype.processString = function(content) {
   var output = content;
 
   if (content.match(this.matcher)) {
