@@ -2,14 +2,18 @@
 
 var Filter = require('broccoli-filter');
 
-function UseStrictRemover (inputTree, options) {
+function UseStrictRemover (inputTree, _options) {
   if (!(this instanceof UseStrictRemover)) {
-    return new UseStrictRemover(inputTree, options);
+    return new UseStrictRemover(inputTree, _options);
   }
 
-  this.inputTree = inputTree;
-  this.options = options || {};
-  this.matcher = this.options.matcher || /REMOVE_USE_STRICT: true/g;
+  var options = _options || {};
+  var matcher = options.matcher || /REMOVE_USE_STRICT: true/g;
+
+  delete options.matcher;
+  Filter.call(this, inputTree, options);
+
+  this.matcher = matcher;
 }
 
 UseStrictRemover.prototype = Object.create(Filter.prototype);

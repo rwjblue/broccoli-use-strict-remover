@@ -17,7 +17,7 @@
     "javascript"
   ],
   "dependencies": {
-    "broccoli-filter": "^0.1.9"
+    "broccoli-filter": "^1.0.0"
   },
   "devDependencies": {
     "broccoli": "^0.13.0",
